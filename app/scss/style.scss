@@ -1,0 +1,37 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+.header{
+    background-color: $branded;
+    min-height: 100px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list{
+        display: flex;
+    }
+    &__item{
+        margin: 0 15px;
+    }
+    &__item-link{
+        color: $white;
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 21px;
+        padding-bottom: 5px;
+        transition: all .5s ease;
+        &:hover{
+            border-bottom: 1px solid $white;
+        }
+    }
+    .phone{
+        color: $white;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}

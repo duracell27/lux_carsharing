@@ -1,37 +1,84 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
 
-.header{
-    background-color: $branded;
-    min-height: 100px;
-    &__inner{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+.header {
+  background-color: $branded;
+  min-height: 100px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+  }
+  &__item {
+    margin: 0 15px;
+  }
+  &__item-link {
+    color: $white;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 5px;
+    transition: all 0.5s ease;
+    &:hover {
+      border-bottom: 1px solid $white;
     }
-    &__list{
-        display: flex;
-    }
-    &__item{
-        margin: 0 15px;
-    }
-    &__item-link{
-        color: $white;
-        text-transform: uppercase;
-        font-size: 18px;
-        line-height: 21px;
-        padding-bottom: 5px;
-        transition: all .5s ease;
-        &:hover{
-            border-bottom: 1px solid $white;
-        }
-    }
-    .phone{
-        color: $white;
-        font-size: 18px;
-        line-height: 21px;
-    }
+  }
+  .phone {
+    color: $white;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.rent {
+  padding: 100px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    width: 300px;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    font-family: "fira sans", serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+  &__text + &__text {
+    margin-bottom: 40px;
+  }
+  &__item {
+    border: 1px solid $branded;
+    width: 250px;
+    min-height: 350px;
+    padding: 0 35px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__item-num {
+    font-size: 96px;
+    line-height: 115px;
+    font-family: "fira sans", serif;
+    font-weight: 500;
+    color: rgba($branded, 0.05);
+  }
+  &__item-title {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "fira sans", serif;
+    font-weight: 500;
+    margin-bottom: auto;
+  }
 }

@@ -8,12 +8,22 @@
     background-color: $branded;
     min-height: 100px;
     &__inner{
+        padding: 26px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+    .phone{
+        color: $white;
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+.menu{
     &__list{
         display: flex;
+        list-style: none;
     }
     &__item{
         margin: 0 15px;
@@ -25,13 +35,88 @@
         line-height: 21px;
         padding-bottom: 5px;
         transition: all .5s ease;
+        border-bottom: 1px solid transparent;
         &:hover{
             border-bottom: 1px solid $white;
         }
     }
-    .phone{
-        color: $white;
-        font-size: 18px;
-        line-height: 21px;
+}
+
+.top{
+    &__heading{
+        display: flex;
+        padding: 50px 0 30px;
+    }
+    &__content{
+        text-align: center;
+        padding-top: 90px;
+        width: 50%;
+    }
+    &__title{
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 58px;
+        margin: 0 auto 20px;
+        max-width: 455px;
+    }
+    &__text{
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0 auto 60px;
+        max-width: 470px;
+    }
+    &__slider{
+        width: 50%;
+    }
+    .slick-dots{
+        list-style: none;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        display: flex;
+        transform: translateY(-50%);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        li{
+            width: 16px;
+            height: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            font-size: 0;
+            width: 8px;
+            height: 8px;
+            background-color: $branded;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            border-radius: 50%;
+            padding: 0;
+        }
+    }
+    .slick-active{
+        width: 16px;
+        height: 16px;
+        button{
+            width: 16px;
+            height: 16px;  
+        }
+    }
+}
+.application-btn{
+    color: $white;
+    text-transform: uppercase;
+    background-color: $accent;
+    padding: 16px 19px;
+    border: 1px solid $accent;
+    transition: all .5s ease;
+    &:hover{
+        background-color: $white;
+        color: $accent;
+        border: 1px solid $accent;
     }
 }

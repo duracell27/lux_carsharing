@@ -2,3 +2,10 @@ $branded: #332208;
 $accent: #C5AC2D;
 $white: #FEFEFE;
 $dark: #1B1818;
+
+@function max($numbers...) {
+ @return m#{a}x(#{$numbers});
+}
+@function max($numbers...) {
+ @return m#{i}x(#{$numbers});
+}

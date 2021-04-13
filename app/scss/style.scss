@@ -37,151 +37,352 @@
   }
 }
 
-.menu{
-    &__list{
-        display: flex;
-        list-style: none;
-    }
-    &__item{
-        margin: 0 15px;
-    }
-    &__item-link{
-        color: $white;
-        text-transform: uppercase;
-        font-size: 18px;
-        line-height: 21px;
-        padding-bottom: 5px;
-        transition: all .5s ease;
-        border-bottom: 1px solid transparent;
-        &:hover{
-            border-bottom: 1px solid $white;
-        }
-    }
-}
-
-.top{
-    padding-bottom: 100px;
-    &__heading{
-        display: flex;
-        padding: 50px 0 30px;
-    }
-    &__content{
-        text-align: center;
-        padding-top: 90px;
-        width: 50%;
-    }
-    &__title{
-        font-family: 'Fira Sans', sans-serif;
-        font-weight: 500;
-        font-size: 48px;
-        line-height: 58px;
-        margin: 0 auto 20px;
-        max-width: 455px;
-    }
-    &__text{
-        font-size: 24px;
-        line-height: 28px;
-        margin: 0 auto 60px;
-        max-width: 470px;
-    }
-    &__slider{
-        width: 50%;
-    }
-    .slick-dots{
-        list-style: none;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        display: flex;
-        transform: translateY(-50%);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        li{
-            width: 16px;
-            height: 16px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        button{
-            font-size: 0;
-            width: 8px;
-            height: 8px;
-            background-color: $branded;
-            outline: none;
-            cursor: pointer;
-            border: none;
-            border-radius: 50%;
-            padding: 0;
-        }
-    }
-    .slick-active{
-        width: 16px;
-        height: 16px;
-        button{
-            width: 16px;
-            height: 16px;  
-        }
-    }
-}
-.application-btn{
+.menu {
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+  &__item {
+    margin: 0 15px;
+  }
+  &__item-link {
     color: $white;
     text-transform: uppercase;
-    background-color: $accent;
-    padding: 16px 19px;
-    border: 1px solid $accent;
-    transition: all .5s ease;
-    &:hover{
-        background-color: $white;
-        color: $accent;
-        border: 1px solid $accent;
+    font-size: 18px;
+    line-height: 21px;
+    padding-bottom: 5px;
+    transition: all 0.5s ease;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-bottom: 1px solid $white;
     }
+  }
+}
+
+.top {
+  padding-bottom: 100px;
+  &__heading {
+    display: flex;
+    padding: 50px 0 30px;
+  }
+  &__content {
+    text-align: center;
+    padding-top: 90px;
+    width: 50%;
+  }
+  &__title {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    margin: 0 auto 20px;
+    max-width: 455px;
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 auto 60px;
+    max-width: 470px;
+  }
+  &__slider {
+    width: 50%;
+  }
+  &__slider-text {
+    padding-right: 100px;
+    text-align: right;
+    font-family: "fira sans", serif;
+    span {
+      margin: 0 7px;
+    }
+  }
+  .slick-dots {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    display: flex;
+    transform: translateY(-50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li {
+      width: 16px;
+      height: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      font-size: 0;
+      width: 8px;
+      height: 8px;
+      background-color: $branded;
+      outline: none;
+      cursor: pointer;
+      border: none;
+      border-radius: 50%;
+      padding: 0;
+    }
+  }
+  .slick-active {
+    width: 16px;
+    height: 16px;
+    button {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  &__items {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+    border: 1px solid $dark;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+  &__links {
+    margin-right: 80px;
+  }
+  &__link {
+    color: $dark;
+    border-bottom: 1px solid $dark;
+    cursor: pointer;
+  }
+  &__link + &__link {
+    margin-left: 20px;
+  }
+}
+.application-btn {
+  color: $white;
+  text-transform: uppercase;
+  background-color: $accent;
+  padding: 16px 19px;
+  border: 1px solid $accent;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: $white;
+    color: $accent;
+    border: 1px solid $accent;
+  }
 }
 
 .rent {
-    padding: 100px 0;
-    &__inner {
-      display: flex;
-      justify-content: space-between;
+  padding: 100px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    width: 300px;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    font-family: "fira sans", serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+  &__text + &__text {
+    margin-bottom: 54px;
+  }
+  &__item {
+    border: 1px solid $branded;
+    width: 250px;
+    min-height: 350px;
+    padding: 0 35px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+  &__item-num {
+    font-size: 96px;
+    line-height: 115px;
+    font-family: "fira sans", serif;
+    font-weight: 500;
+    color: rgba($branded, 0.05);
+  }
+  &__item-title {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "fira sans", serif;
+    font-weight: 500;
+    margin-bottom: auto;
+  }
+}
+
+.benefits {
+  padding: 100px 0;
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    font-family: "fira sans", serif;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list {
+    width: 300px;
+  }
+  &__list-item {
+    margin-bottom: 27px;
+    padding-right: 26px;
+    position: relative;
+    text-align: right;
+    &::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      top: 3px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: $branded;
+      right: 0;
     }
-    &__content {
-      width: 300px;
+    &:nth-child(1),
+    &:nth-child(7) {
+      margin-right: 10px;
     }
-    &__title {
-      font-size: 24px;
-      line-height: 29px;
-      font-family: "fira sans", serif;
-      font-weight: 500;
-      margin-bottom: 30px;
+    &:nth-child(2),
+    &:nth-child(6) {
+      margin-right: 60px;
     }
-    &__text {
-      margin-bottom: 20px;
+    &:nth-child(3),
+    &:nth-child(5) {
+      margin-right: 110px;
     }
-    &__text + &__text {
-      margin-bottom: 40px;
-    }
-    &__item {
-      border: 1px solid $branded;
-      width: 250px;
-      min-height: 350px;
-      padding: 0 35px 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
-    &__item-num {
-      font-size: 96px;
-      line-height: 115px;
-      font-family: "fira sans", serif;
-      font-weight: 500;
-      color: rgba($branded, 0.05);
-    }
-    &__item-title {
-      font-size: 18px;
-      line-height: 22px;
-      font-family: "fira sans", serif;
-      font-weight: 500;
-      margin-bottom: auto;
+    &:nth-child(4) {
+      margin-right: 160px;
     }
   }
+  &__content {
+    width: 300px;
+    text-align: right;
+  }
+  &__text {
+    margin-bottom: 30px;
+    text-align: right;
+  }
+  &__text + &__text {
+    width: 267px;
+    margin-left: auto;
+  }
+}
+
+.video-popup {
+  background-color: $accent;
+  text-transform: uppercase;
+  color: $white;
+  padding: 6px 34px 6px 64px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/play.svg);
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    top: 12px;
+    left: 34px;
+  }
+}
+
+.reviews {
+  padding: 100px 0;
+  background-color: $branded;
+  color: $white;
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    font-family: "fira sans", serif;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  &__item {
+    text-align: center;
+    border: 1px solid $accent;
+    padding: 45px 30px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 270px;
+    min-height: 300px;
+    margin-right: 30px;
+  }
+  &__item-name {
+    font-size: 24px;
+    line-height: 29px;
+    font-family: "fira sans", serif;
+    font-weight: 500;
+  }
+  .slick {
+    &-slide {
+      margin: 0 15px;
+    }
+
+    &-list {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    li {
+      width: 16px;
+      height: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      font-size: 0;
+      width: 8px;
+      height: 8px;
+      background-color: $accent;
+      outline: none;
+      cursor: pointer;
+      border: none;
+      border-radius: 50%;
+      padding: 0;
+    }
+  }
+  .slick-active {
+    width: 16px;
+    height: 16px;
+    button {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

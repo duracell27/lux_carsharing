@@ -30,11 +30,11 @@
       border-bottom: 1px solid $white;
     }
   }
-  .phone {
-    color: $white;
-    font-size: 18px;
-    line-height: 21px;
-  }
+}
+.phone {
+  color: $white;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .menu {
@@ -384,5 +384,81 @@
       width: 16px;
       height: 16px;
     }
+  }
+}
+
+.feedback {
+  padding: 100px 0;
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__images {
+    width: 50%;
+  }
+  &__form {
+    width: 415px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    font-family: "fira sans", serif;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  &__text {
+    bottom: 30px;
+  }
+  &__input {
+    display: block;
+    padding: 20px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    &::placeholder {
+      font-size: 16px;
+      line-height: 20px;
+
+      color: $dark;
+    }
+  }
+  &__btn {
+    background-color: $accent;
+    text-transform: uppercase;
+    color: $white;
+    border: 1px solid $accent;
+    padding: 16px 36px 15px;
+    display: inline-block;
+    margin-top: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 19px;
+    transition: all .5s ease;
+    &:hover {
+      border: 1px solid $accent;
+      color: $accent;
+      background-color: $white;
+    }
+  }
+}
+
+.footer {
+  padding: 100px 0 24px;
+  background-color: $branded;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 21px;
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__social-item {
+    margin: 0 15px;
   }
 }
